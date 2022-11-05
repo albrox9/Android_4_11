@@ -9,12 +9,12 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
 
         Button b = findViewById(R.id.bt1);
         TextView tv1 = findViewById(R.id.tvSalida);
@@ -22,9 +22,10 @@ public class MainActivity extends AppCompatActivity {
         b.setOnClickListener(view -> accionBoton(tv1));
     }
 
+
     private void accionBoton(TextView tv1) {
 
-        String mensaje = "";
+        String mensaje;
 
         if (retornaNum() == 30) {
             mensaje = getResources().getString(R.string.good_option);
@@ -32,10 +33,12 @@ public class MainActivity extends AppCompatActivity {
 
         } else if (retornaNum() < 30) {
             mensaje = getResources().getString(R.string.smaller_option);
+            mensaje = String.format(mensaje, this.retornaNum());
             tv1.setText(mensaje);
 
         } else {
             mensaje = getResources().getString(R.string.higher_option);
+            mensaje = String.format(mensaje, this.retornaNum());
             tv1.setText(mensaje);
         }
     }

@@ -3,8 +3,9 @@
     <string name="app_name">Acertijo</string>
     <string name="button_press">Prueba</string>
     <string name="good_option">¡Enhorabuena, acertaste!</string>
-    <string name="smaller_option">¡Te quedaste corto!</string>
-    <string name="higher_option">¡Te has pasado!</string>
     <string name="text_introduction">He pensado un numero del 1 al 100\n ¡Adivinalo!</string>
+    <string name="smaller_option">El numero %1$d es menor que el que he pensado</string>
+    <string name="higher_option">El numero %1$d es mayor que el que he pensado</string>
     <string name="text_label">¡Intentalo!</string>
+
 </resources>
