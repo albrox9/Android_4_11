@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Riddle</string>
+    <string name="button_press">Press</string>
+    <string name="good_option">Congratulations!</string>
+    <string name="smaller_option">Ups, its too small</string>
+    <string name="higher_option">Nop, its too higher</string>
+    <string name="text_introduction">Thinking a number between 1 and 100\n ¡We go!</string>
+    <string name="text_label">Try it!</string>
+</resources>
